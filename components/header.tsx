@@ -5,11 +5,9 @@ export default function Header() {
   return (
     <div className=" sticky top-0 z-50 bg-transparent-50 bg-gradient-to-b from-slate-900 to-slate-800 flex items-center justify-center p-4">
       {/* Header Container */}
-      <div className="w-full max-w-6xl bg-white rounded-2xl shadow-2xl px-8 py-6 flex items-center justify-between">
+      <div className="w-full max-w-6xl bg-white rounded-2xl shadow-2xl px-8 py-2 flex items-center justify-between">
         {/* Logo */}
-        <div className=" ">
-         <Image src="/ME.png" alt="MarkedEdge Logo" width={40} height={80} className="object-cover h-[40px] w-full "/>
-        </div>
+        <Image src="/ME.png" alt="MarkedEdge Logo" width={40} height={80} className="object-cover h-20 w-60 " />
 
         {/* Navigation Menu */}
         <nav className="hidden md:flex items-center gap-8 flex-1 justify-center">
