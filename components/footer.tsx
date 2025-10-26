@@ -1,13 +1,13 @@
 import { Button } from './ui/button';
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#f4f0fa] to-white text-center py-6 relative">
+    <footer className="bg-gradient-to-b from-[#f4f0fa] to-white text-center py-6 relative  shadow-inner ">
       {/* Logo */}
       <div className="flex justify-center mb-4">
         <img
           src="/ME.png" // replace with your actual logo path
           alt="MarkedEdge Logo"
-          className="h-10"
+          className="h-20 w-60 object-cover"
         />
       </div>
 
@@ -32,7 +32,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <p className="text-sm text-gray-500">
-        Copyright © 2024 <span className="font-medium">MarkedEdge</span> |{' '}
+        Copyright © 2025 <span className="font-medium">MarkedEdge</span> |{' '}
         <a href="/privacy" className="hover:underline">
           Privacy Policy
         </a>
