@@ -63,7 +63,7 @@ const fadeInUp = {
 
 export default function Services() {
   return (
-    <section className="relative bg-[#0b0b0b] text-white py-24 overflow-hidden">
+    <section id="services" className="relative bg-[#0b0b0b] text-white py-24 overflow-hidden">
       {/* Floating green glows */}
       <motion.div
         className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full bg-[#9CFF1E20] blur-[120px]"

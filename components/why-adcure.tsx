@@ -37,7 +37,7 @@ const features = [
 
 export default function WhatMakesUsDifferent() {
   return (
-    <section className="relative bg-[#0b0b0b] text-white py-24 px-6 md:px-20 overflow-hidden">
+    <section id="why" className="relative bg-[#0b0b0b] text-white py-24 px-6 md:px-20 overflow-hidden">
       {/* Floating glow background */}
       <motion.div
         className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-[#9CFF1E15] blur-[120px] rounded-full"
