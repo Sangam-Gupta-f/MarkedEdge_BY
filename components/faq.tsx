@@ -37,6 +37,8 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="relative bg-[#0b0b0b] text-white py-24 px-6 md:px-20 overflow-hidden">
+       {/* Glow Line */}
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#9CFF1E] to-transparent opacity-70"></div>
       {/* Glow background accents */}
       <motion.div
         className="absolute -top-40 -left-32 w-[400px] h-[400px] bg-[#9CFF1E15] blur-[120px] rounded-full"
@@ -106,7 +108,7 @@ export default function FAQ() {
           <p className="text-gray-400">
             Still have a question?{" "}
             <a
-              href="#"
+              href="https://alvo.chat/6Of2"
               className="text-[#9CFF1E] font-semibold hover:underline hover:text-white transition"
             >
               Chat with our team →

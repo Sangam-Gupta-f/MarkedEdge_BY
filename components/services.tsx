@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const services = [
   {
@@ -64,6 +65,8 @@ const fadeInUp = {
 export default function Services() {
   return (
     <section id="services" className="relative bg-[#0b0b0b] text-white py-24 overflow-hidden">
+       {/* Glow Line */}
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#9CFF1E] to-transparent opacity-70"></div>
       {/* Floating green glows */}
       <motion.div
         className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full bg-[#9CFF1E20] blur-[120px]"
@@ -134,7 +137,7 @@ export default function Services() {
               }}
               className="mt-8 text-black font-semibold bg-[#9CFF1E] px-6 py-3 rounded-full transition-all hover:bg-[#b8ff54]"
             >
-              {service.cta}
+              <Link href="https://calendly.com/rituraj-markededge/30min">{service.cta}</Link>
             </motion.button>
           </motion.div>
         ))}

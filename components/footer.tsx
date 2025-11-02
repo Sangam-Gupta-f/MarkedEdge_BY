@@ -21,7 +21,7 @@ export default function Footer() {
       {/* Logo */}
       <div className="flex justify-center mb-8">
         <Image
-          src="/ME.png"
+          src="/Logo.png"
           alt="MarkedEdge Logo"
           width={160}
           height={60}

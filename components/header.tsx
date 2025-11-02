@@ -26,7 +26,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#top" className="flex items-center gap-2">
           <Image
-            src="/ME.png"
+            src="/Logo.png"
             alt="MarkedEdge Logo"
             width={130}
             height={40}
@@ -45,7 +45,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-300 hover:text-[#9CFF1E] transition font-medium text-sm relative group"
+              className="text-gray-300 hover:text-[#9CFF1E] transition font-medium text-md relative group"
             >
               {link.label}
               <span className="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-[#9CFF1E] group-hover:w-full transition-all duration-300"></span>
@@ -55,7 +55,7 @@ export default function Header() {
 
         {/* CTA Button */}
         <a
-          href="#contact"
+          href="https://alvo.chat/6Of2"
           className="hidden md:inline-flex bg-[#9CFF1E] text-black text-sm font-semibold px-5 py-2 rounded-full hover:shadow-[0_0_15px_#9CFF1E] hover:scale-105 transition-all"
         >
           Chat Now

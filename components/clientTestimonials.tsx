@@ -6,22 +6,22 @@ import Image from "next/image";
 const testimonials = [
   {
     brand: "BlackPapers",
-    logo: "/brands/blackpapers.png", // <-- replace with actual logo path
+    logo: "/BP.png", // <-- replace with actual logo path
     text: "We’ve been associated with MarkedEdge for a long time, and I can confidently say they’ve delivered consistent performance from day one. Our campaigns have always maintained a great cost per lead, and the quality of leads has stayed strong.",
   },
   {
     brand: "Urban House Interiors",
-    logo: "/brands/urbanhouse.png",
+    logo: "/UHI logo.png",
     text: "It’s been around 10 months with MarkedEdge, and we’ve built an audience of 45K organic followers. Along with that, our Meta ads have started delivering strong and consistent results. The team genuinely understands how to grow a brand the right way.",
   },
   {
     brand: "Archirace Studio",
-    logo: "/brands/archirace.png",
+    logo: "/A.png",
     text: "From the first campaign itself, we started seeing quality leads at a very low CPL. What really stands out about MarkedEdge is their agility — the team is always ready to optimize whenever there’s a dip or issue with ads.",
   },
   {
     brand: "Jalsaghar Art Studio",
-    logo: "/brands/jalsaghar.png",
+    logo: "/J.png",
     text: "MarkedEdge completely transformed our marketing journey. From creating an engaging Shopify website to building 4K+ organic followers on Instagram, the team has helped us turn our creative passion into a real brand identity that connects with customers.",
   },
   {

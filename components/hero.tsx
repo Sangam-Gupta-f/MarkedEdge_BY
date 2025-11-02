@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -67,7 +68,9 @@ export default function Hero() {
             whileTap={{ scale: 0.98 }}
             className="px-8 py-3 rounded-full font-semibold text-black bg-[#9CFF1E] hover:bg-[#b3ff47] transition-all duration-300 hover:shadow-[0_0_30px_#9CFF1E80]"
           >
-            Book A Strategy Call
+            <Link href="https://calendly.com/rituraj-markededge/30min" target="_blank" rel="noopener noreferrer">
+              Book A Strategy Call
+            </Link>
           </motion.button>
         </div>
       </div>
@@ -87,29 +90,6 @@ export default function Hero() {
           />
         </div>
       </div>
-
-      {/* Scroll Down Indicator */}
-      <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-[#9CFF1E] text-sm font-medium cursor-pointer"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
-      >
-        <span>Scroll</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={2}
-          stroke="currentColor"
-          className="w-5 h-5 mt-1"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </motion.div>
     </div>
   );
 }
