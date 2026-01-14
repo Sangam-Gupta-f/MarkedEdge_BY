@@ -29,8 +29,8 @@ export default function Header() {
             src="/Logo.png"
             alt="MarkedEdge Logo"
             width={130}
-            height={40}
-            className="object-contain"
+            height={50}
+            className="w-[130px] h-[50px] object-contain"
           />
         </a>
 
