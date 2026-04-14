@@ -51,8 +51,8 @@ export default function ClientTextTestimonials() {
           What Our <span className="text-[#9CFF1E]">Clients Say</span>
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          Real stories from our partner brands — consistent performance,
-          real growth, and long-term results.
+          Real results from interior designers & service businesses using our
+          systems”
         </p>
       </div>
 

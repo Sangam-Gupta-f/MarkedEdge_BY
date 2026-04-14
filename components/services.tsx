@@ -6,45 +6,33 @@ import Link from "next/link";
 const services = [
   {
     id: 1,
-    title: "Lead-Gen Ads Sprint (90 Days)",
-    tag: "Meta + Google Ads",
-    description:
-      "A 90-day sprint to get 30–40 qualified appointments. We run Meta Ads, set up tracking, landing pages, and WhatsApp/CRM routing — all focused on conversion.",
+    title:
+      "Get 50–80 qualified interior leads + 30 engaging content pieces in 60 days.",
+    tag: "60-Day Lead & Content System",
     highlights: [
-      "ICP & offer polish",
-      "Ad scripts + creative kit",
-      "Pixel setup & daily budget control",
-      "Weekly performance report",
+      "Lead generation system (Meta ads)",
+      "30 high-engagement content pieces",
+      "Done-for-you execution",
+      "Built for consistent inquiries",
+      "If we don’t deliver outcomes → you don’t pay us.",
     ],
-    cta: "Start the Sprint →",
+    cta: "Get Started →",
   },
   {
     id: 2,
-    title: "Founder Personal Brand Engine (Instagram)",
-    tag: "Done-With-You Content System",
-    description:
-      "We turn your face and process into your strongest trust signal. Custom content strategy, Reels, and posts built to drive enquiries — not vanity likes.",
+    title:
+      "Build a predictable flow of high-ticket interior clients without depending on referrals or ads.",
+    tag: "180-Day Client Acquisition System",
     highlights: [
-      "Monthly content plan & hooks",
-      "Reel & carousel editing",
-      "DM & story prompts",
-      "Monthly A/B testing",
+      "Personal brand positioning",
+      "Content strategy + authority building",
+      "Inquiry filtering system",
+      "Inbound lead system",
+      "5K – 10K followers organically ",
+      "30+ high-ticket appointments",
+      "We build a working system that generates consistent inquiries — or you don’t pay us.",
     ],
-    cta: "Build My Brand →",
-  },
-  {
-    id: 3,
-    title: "Conversion-Focused Websites",
-    tag: "Next.js / Shopify / WordPress",
-    description:
-      "Websites that turn visitors into leads or orders. Fast, clear, and tracked from day one — built to convert, not just look good.",
-    highlights: [
-      "High-intent copy & trust blocks",
-      "GA4 + Pixel tracking",
-      "Mobile speed optimization",
-      "Clean, scalable design",
-    ],
-    cta: "Plan My Site →",
+    cta: "Build My System →",
   },
 ];
 
@@ -64,8 +52,11 @@ const fadeInUp = {
 
 export default function Services() {
   return (
-    <section id="services" className="relative bg-[#0b0b0b] text-white py-24 overflow-hidden">
-       {/* Glow Line */}
+    <section
+      id="services"
+      className="relative bg-[#0b0b0b] text-white py-24 overflow-hidden"
+    >
+      {/* Glow Line */}
       <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#9CFF1E] to-transparent opacity-70"></div>
       {/* Floating green glows */}
       <motion.div
@@ -85,11 +76,12 @@ export default function Services() {
           <span className="text-gray-400">Our</span>{" "}
           <span className="text-white">Growth</span>{" "}
           <span className="text-[#9CFF1E] underline decoration-[#9CFF1E]/60">
-            Services
+            Systems
           </span>
         </h2>
         <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-          Three focused programs to scale your brand — from leads, to personal brand, to high-converting websites.
+          Three focused programs to scale your brand — from leads, to personal
+          brand, to high-converting websites.
         </p>
       </div>
 
@@ -100,7 +92,7 @@ export default function Services() {
             key={service.id}
             className="relative bg-[#111] border border-[#1f1f1f] rounded-2xl p-8 max-w-sm md:max-w-md flex flex-col justify-between cursor-pointer"
             custom={index}
-            variants={fadeInUp}
+            // variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
@@ -117,7 +109,7 @@ export default function Services() {
                 {service.tag}
               </div>
               <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-              <p className="text-gray-400 mb-6">{service.description}</p>
+              {/* <p className="text-gray-400 mb-6">{service.description}</p> */}
 
               <ul className="space-y-2 text-gray-300 text-sm">
                 {service.highlights.map((point, i) => (
@@ -137,7 +129,9 @@ export default function Services() {
               }}
               className="mt-8 text-black font-semibold bg-[#9CFF1E] px-6 py-3 rounded-full transition-all hover:bg-[#b8ff54]"
             >
-              <Link href="https://calendly.com/rituraj-markededge/30min">{service.cta}</Link>
+              <Link href="https://calendly.com/rituraj-markededge/30min">
+                {service.cta}
+              </Link>
             </motion.button>
           </motion.div>
         ))}

@@ -4,7 +4,15 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { Volume2, VolumeX, Pause, Play } from "lucide-react"; // icons
 
-const videos = [
+type Video = {
+  id: number;
+  thumbnail: string;
+  url: string;
+  duration: string;
+  label: string;
+};
+
+const videos: Video[] = [
   {
     id: 1,
     thumbnail: "/motu.mp4",
@@ -61,8 +69,8 @@ export default function ClientTestimonials() {
 }
 
 // 🎬 Reusable VideoCard component
-function VideoCard({ video, index }) {
-  const videoRef = useRef(null);
+function VideoCard({ video, index }: { video: Video; index: number }) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(true);
 

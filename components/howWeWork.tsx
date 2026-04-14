@@ -4,13 +4,48 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const steps = [
-  { id: 1, title: "ICP & Offer Lab", description: "We define your ideal customer, service packages, and the one offer that makes them act now." },
-  { id: 2, title: "Hook & Creative Kit", description: "We turn your work and founder story into scroll-stopping hooks and simple creatives. No big shoots—clarity wins." },
-  { id: 3, title: "Funnel Build", description: "We set up the shortest path to an enquiry: lead form or landing page, tracking, and CRM/WhatsApp routing." },
-  { id: 4, title: "Launch & Learn (Day 7–10)", description: "We go live fast, study early signals, and keep only what brings leads at a fair cost." },
-  { id: 5, title: "Optimize to CPL Ceiling", description: "We agree on a target cost per lead, test audiences, creatives, and copy until we hit it — then scale carefully." },
-  { id: 6, title: "Nurture & Show-Up", description: "We give you DM/WhatsApp follow-up prompts and scripts so more leads become booked calls." },
-  { id: 7, title: "Weekly Review", description: "A simple scorecard — leads, CPL, hooks, watch rate, booked calls, and revenue. You’ll know what’s working." },
+  {
+    id: 1,
+    title: "Understand Your Business",
+    description:
+      "We first understand your work, pricing, and ideal clients.So we can attract the right people — not random inquiries.",
+  },
+  {
+    id: 2,
+    title: "Position You as Premium",
+    description:
+      "We improve your profile and content so you look like a trusted expert.This helps clients take you seriously.",
+  },
+  {
+    id: 3,
+    title: "Create Engaging Content",
+    description:
+      "We create reels and posts that attract attention and build trust.So when people visit your profile, they feel confident contacting you.",
+  },
+  {
+    id: 4,
+    title: "Generate Leads",
+    description:
+      "We run ads and systems to bring people who are interested in interior work.These people share their details and become leads.",
+  },
+  {
+    id: 5,
+    title: "Filter Quality Clients",
+    description:
+      "We set up a system so only serious clients reach you. This saves your time and improves conversions.",
+  },
+  {
+    id: 6,
+    title: "Build Consistent Flow",
+    description:
+      "We optimize everything so you start getting regular inquiries.Not just once — but continuously.",
+  },
+  {
+    id: 7,
+    title: "Help You Close Better",
+    description:
+      "With better leads and strong branding, closing deals becomes easier for you.",
+  },
 ];
 
 export default function HowWeWork() {
@@ -48,7 +83,8 @@ export default function HowWeWork() {
           <p className="text-gray-400 text-lg max-w-md leading-relaxed">
             The 7-step process we use to take you from{" "}
             <span className="text-white font-semibold">studio to sales</span> —
-            building a brand that grows and sells on social media with clarity and confidence.
+            building a brand that grows and sells on social media with clarity
+            and confidence.
           </p>
 
           <motion.button
@@ -58,7 +94,11 @@ export default function HowWeWork() {
             }}
             className="mt-8 bg-[#9CFF1E] text-black font-semibold px-8 py-3 rounded-full transition-all hover:bg-[#b6ff47]"
           >
-            <a href="https://alvo.chat/6Of2q" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://alvo.chat/6Of2q"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Get Started
             </a>
           </motion.button>

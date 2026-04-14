@@ -41,24 +41,24 @@ export default function Hero() {
         {/* Headline */}
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-            Stop Chasing Reach.
+            Predictable High-Ticket Clients Acquisition for
           </h1>
           <h2 className="text-5xl md:text-7xl font-bold text-[#9CFF1E] drop-shadow-[0_0_15px_#9CFF1E60]">
-            Start Closing Revenue!
+            Interior Designers & Architects
           </h2>
         </div>
 
         {/* Stats */}
         <p className="text-lg text-gray-300 font-medium">
-          5+ Years Experience | 1,000 → 45,000 followers in 9 months (for our
+          5+ Years Experience | 1,000 → 63,000 followers in 11 months (for our
           Interior Designer Client)
         </p>
 
         {/* Description */}
         <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
-          We help service businesses (interior & décor, consulting, local
-          services) book qualified appointments in 90 days using Meta ads,
-          founder-led content, and conversion-focused websites.
+          We help interior designers & architects generate consistent
+          high-quality inquiries using content + lead systems — so you’re not
+          dependent on referrals or ads
         </p>
 
         {/* CTA Button */}
@@ -68,7 +68,11 @@ export default function Hero() {
             whileTap={{ scale: 0.98 }}
             className="px-8 py-3 rounded-full font-semibold text-black bg-[#9CFF1E] hover:bg-[#b3ff47] transition-all duration-300 hover:shadow-[0_0_30px_#9CFF1E80]"
           >
-            <Link href="https://calendly.com/rituraj-markededge/30min" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://calendly.com/rituraj-markededge/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Book A Strategy Call
             </Link>
           </motion.button>
