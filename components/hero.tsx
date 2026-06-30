@@ -71,7 +71,6 @@ export default function Hero() {
            <Link href="/book-call">
   Book A Strategy Call
 </Link>
-            </Link>
           </motion.button>
         </div>
       </div>
