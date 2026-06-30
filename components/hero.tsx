@@ -68,12 +68,9 @@ export default function Hero() {
             whileTap={{ scale: 0.98 }}
             className="px-8 py-3 rounded-full font-semibold text-black bg-[#9CFF1E] hover:bg-[#b3ff47] transition-all duration-300 hover:shadow-[0_0_30px_#9CFF1E80]"
           >
-            <Link
-              href="https://calendly.com/rituraj-markededge/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book A Strategy Call
+           <Link href="/book-call">
+  Book A Strategy Call
+</Link>
             </Link>
           </motion.button>
         </div>
