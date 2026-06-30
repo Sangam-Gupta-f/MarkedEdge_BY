@@ -63,15 +63,12 @@ export default function Hero() {
 
         {/* CTA Button */}
         <div className="pt-4">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            className="px-8 py-3 rounded-full font-semibold text-black bg-[#9CFF1E] hover:bg-[#b3ff47] transition-all duration-300 hover:shadow-[0_0_30px_#9CFF1E80]"
-          >
-           <Link href="/book-call">
+          <Link
+  href="/book-call"
+  className="inline-block px-8 py-3 rounded-full font-semibold text-black bg-[#9CFF1E] hover:bg-[#b3ff47] transition-all duration-300 hover:shadow-[0_0_30px_#9CFF1E80]"
+>
   Book A Strategy Call
 </Link>
-          </motion.button>
         </div>
       </div>
 
